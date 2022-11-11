@@ -7,18 +7,15 @@ export default function Home({data}) {
   const { header, footer } = data
   return (
     <div>
+      <div className="page">
+          <main>
 
-    <Header header={header}/>
-      <main>
-
-        <div>
-          <a href="https://nextjs.org/docs">
-            <h2>Documentation &rarr;</h2>
-            <p className="text-red-600">Find in-depth information about Next.js features and API.</p>
-          </a>
-        </div>
-      </main>
-      <Footer footer={footer}/>
+            <div className='content'>
+              <h1 className="title">Austi's Products</h1>
+            </div>
+          </main>
+          <Footer footer={footer}/>
+      </div>
     </div>
   )
 }

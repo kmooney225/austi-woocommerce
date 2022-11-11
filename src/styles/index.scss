@@ -2,8 +2,34 @@
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
-body {
-    p {
-        color: blue;
-    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+.page {
+    position: relative;
+    height: 300vh;
+}
+
+.content {
+    background: linear-gradient(to top right, green, black);
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    top: -80px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    margin-left: 20%;
+}
+
+@import './header';
