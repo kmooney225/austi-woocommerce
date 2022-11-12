@@ -1,21 +1,18 @@
-import Header from '../src/components/layouts/header';
-import Footer from '../src/components/layouts/footer';
 import axios from 'axios'
+import Hero from '../src/components/home/Hero';
+import Service from '../src/components/home/services';
+import BlogGallery from '../src/components/home/blog-gallery';
+import Contact from '../src/components/home/contact';
 
 export default function Home({data}) {
 
   const { header, footer } = data
   return (
     <div>
-      <div className="page">
-          <main>
-
-            <div className='content'>
-              <h1 className="title">Austi's Products</h1>
-            </div>
-          </main>
-          <Footer footer={footer}/>
-      </div>
+      <Hero />
+	  <Service />
+	  <BlogGallery />
+	  <Contact />
     </div>
   )
 }

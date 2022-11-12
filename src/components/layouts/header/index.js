@@ -14,7 +14,7 @@ const Header = ({header}) => {
         <div>
             <Head>
                 <title>{siteTitle || 'Austi'}</title>
-                <link rel="stylesheet" href={favicon || 'favicon.ico'} />
+                <link href={favicon || 'favicon.ico'} />
             </Head>
             <Navbar />
         </div>

@@ -16,20 +16,10 @@
 }
 
 .content {
-    background: linear-gradient(to top right, green, black);
+    background-image: url('../assets/Plants.gif');
     background-size: cover;
-    height: 600px;
-    position: relative;
-    top: -80px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
+    height: 100vh;
 }
 
-.title {
-    color: white;
-    font-size: 50px;
-    margin-left: 20%;
-}
 
 @import './header';
