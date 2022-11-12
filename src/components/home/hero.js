@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import plantGif from '../../assets/Plants.gif'
 
 const Hero = () =>{
     return(

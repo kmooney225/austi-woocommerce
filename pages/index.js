@@ -10,8 +10,8 @@ export default function Home({data}) {
   return (
     <div>
       <Hero />
-	  <Service />
-	  <BlogGallery />
+	  {/* <Service />
+	  <BlogGallery /> */}
 	  <Contact />
     </div>
   )
