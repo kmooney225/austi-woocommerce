@@ -7,7 +7,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
     const [textColor, setTextColor] = useState('white')
-    const [boxShadow, setBoxShadow] = useState('1px 2px 9px')
+    const [boxShadow, setBoxShadow] = useState('0px')
 
     const handleNav = () => {
         setNav(!nav)

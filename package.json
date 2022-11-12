@@ -21,7 +21,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-social-icons": "^5.15.0",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "swiper": "^8.4.4"
   },
   "devDependencies": {
     "eslint": "8.27.0",
