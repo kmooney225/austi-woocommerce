@@ -3,7 +3,15 @@ module.exports = {
 		'./src/components/**/*.js',
 		'./pages/**/*.js'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				current: 'currentColor',
+				'yellow-green': '#ECF87F',
+				'lime-green': '#81B622',
+				'olive': '#3D550C',
+				'olive-green': '#59981A',
+			},
+		},
 	},
 	variants: {},
 	plugins: [
