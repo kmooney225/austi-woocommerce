@@ -7,6 +7,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
     const [textColor, setTextColor] = useState('white')
+    const [boxShadow, setBoxShadow] = useState('1px 2px 9px')
 
     const handleNav = () => {
         setNav(!nav)
@@ -17,9 +18,11 @@ const Navbar = () => {
             if(window.scrollY >= 600){
                 setColor('#ffffff')
                 setTextColor('#000000')
+                setBoxShadow('1px 2px 9px')
             } else {
                 setColor('transparent')
-                setTextColor('#ffffff')
+                setTextColor('#f2f2f2')
+                setBoxShadow('0px 0px 0px')
             }
         }
         window.addEventListener('scroll', changeColor);
@@ -28,9 +31,10 @@ const Navbar = () => {
 
     return (
         <div 
-        style={{backgroundColor: `${color}`}}
+        style={
+            {backgroundColor: `${color}`,
+             boxShadow: `${boxShadow}`}}
         className="fixed left-0 w-full z-10 ease-in duration-300"
-        
         >
             <div className="max-w-[1240] m-auto flex justify-between items-center p-4 text-white">
                 <Link href='/'>
