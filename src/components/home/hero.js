@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () =>{
 
-    const [opacity, setOpacity] = useState(0.5)
+    const [opacity, setOpacity] = useState(0.6)
     const [blur, setBlur] = useState('blur(0px)')
 
     useEffect(()=>{
@@ -12,7 +12,7 @@ const Hero = () =>{
                 setOpacity(1)
             } else {
                 setBlur('blur(' + window.scrollY/20 + 'px)')
-                setOpacity( 0.5 + window.scrollY/1000)
+                setOpacity( 0.6 + window.scrollY/1200)
             }
         }
         window.addEventListener('scroll', changeBlur);
