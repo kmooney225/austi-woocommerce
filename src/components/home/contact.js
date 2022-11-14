@@ -12,7 +12,7 @@ import { faInstagram,
 
 const Contact = () =>{
     return(
-        <div className="flex w-full min-h-screen justify-center items-center p-2 bg-lime-green">
+        <section className="flex w-full min-h-screen justify-center items-center p-2 bg-lime-green">
             <div className="flex flex-col md:flex-row md:space-x-40 md:space-y-0 space-y-6 bg-olive w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
                 <div className='flex flex-col space-y-8 justify-between'>
                     <div>
@@ -71,11 +71,11 @@ const Contact = () =>{
                                 className='ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mg-2 outline-none focus:ring-2 focus:ring-green-300' 
                             ></textarea>
                         </div>
-                        <button className='inline-block self-end bg-olive-green text-white font-bold rounded-lg px-6 py-2 uppercase text-sm'>Send Message</button>
+                        <button className='inline-block self-end bg-olive-green text-white m-10 hover:bg-lime-green ease-out duration-300 font-semibold border border-green hover:border-transparent rounded-lg px-6 py-2 uppercase text-sm'>Send Message</button>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
