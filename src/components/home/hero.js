@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () =>{
 
-    const [opacity, setOpacity] = useState(0.6)
+    const [opacity, setOpacity] = useState(0.7)
     const [blur, setBlur] = useState('blur(0px)')
-
+    //botantical illustrations
+    //mail chimp
     useEffect(()=>{
         const changeBlur = () => {
             if(window.scrollY >= 600){
@@ -12,7 +13,7 @@ const Hero = () =>{
                 setOpacity(1)
             } else {
                 setBlur('blur(' + window.scrollY/20 + 'px)')
-                setOpacity( 0.6 + window.scrollY/1200)
+                setOpacity( 0.7 + window.scrollY/1600)
             }
         }
         window.addEventListener('scroll', changeBlur);
@@ -20,7 +21,7 @@ const Hero = () =>{
 
     return(
         <div 
-        className='flex items-center justify-center h-screen bg-fixed bg-center bg-cover content'>
+        className='flex items-center justify-center h-screen object-cover bg-fixed bg-center bg-cover content'>
             <div 
             style={{
                 opacity: opacity,
